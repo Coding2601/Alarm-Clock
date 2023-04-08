@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    /*background-color: blue;*/
+    background-image: url('clock.jpg');
+}
+
+.hide{
+    display: none;
+}
+
+.wrapper{
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    top: 16px;
+    transform: translateX(-50%);
+    padding: 50px 80px;
+    position: absolute;
+    left: 50%;
+    border-radius: 8px;
+}
+
+.timer-display{
+    font-size: 35px;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.inputs input{
+    width: 45px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 6px 3px;    
+}
+
+#set{
+    background-color: #377dff;
+    border: none;
+    display: block;
+    padding: 15px 29px;
+    border-radius: 32px;
+    color: white;
+    margin: 24px auto 0 auto;
+    cursor: pointer;
+}
+
+#set:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+
+.alarm{
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr;
+    gap: 16px;
+    margin-top: 24px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 9.5px;
+}
+
+.alarm input[type="checkbox"]{
+    appearance: none;
+    height: 32px;
+    width: 60px;
+    background-color: #e2e2ec;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.alarm input[type="checkbox"]:before{
+    position: absolute;
+    content: "";
+    background-color: #757683;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+}
+
+.alarm input[type="checkbox"]:checked{
+    background-color: #d2e2ff;
+}
+
+.alarm input[type="checkbox"]:checked:before{
+    background-color: #377dff;
+    left: 32px;
+}
+
+.deleteButton{
+    background-color: transparent;
+    font-size: 24px;
+    color: #377dff;
+    border: none;
+    cursor: pointer;
+}
